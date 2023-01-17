@@ -8,6 +8,7 @@ public class Motocycle extends Vehicle{
     public void trip(int distance, int time) {
         if (distance>80){
             System.out.println("Your Trip is too long");
+            return;
         }
         System.out.println(this.getTank());
 
