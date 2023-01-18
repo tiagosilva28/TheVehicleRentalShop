@@ -21,5 +21,9 @@ public abstract class Vehicle {
         return tank;
     }
 
-    public abstract void trip (int distance, int time, double tripGasConsumption);
+    public double getGasConsumption() {
+        return gasConsumption;
+    }
+
+    public abstract void trip (int distance, int time);
 }

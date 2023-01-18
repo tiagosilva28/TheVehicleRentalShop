@@ -6,8 +6,8 @@ public class Car extends Vehicle
     }
 
     @Override
-    public void trip(int distance, int time, double tripGasConsumption) {
-        if (tripGasConsumption * this.getTank() >= distance) {
+    public void trip(int distance, int time) {
+        if (this.getGasConsumption() * this.getTank() >= distance) {
             System.out.println("Have a good trip");
         } else
         System.out.println("Your Car Trip is too long");
