@@ -28,6 +28,11 @@ public abstract class Vehicle {
     public double getGasConsumption() {
         return gasConsumption;
     }
-
+    public String getModelName() {
+        return modelName;
+    }
+    public int getLimitSpeed() {
+        return limitSpeed;
+    }
     public abstract void trip (int distance, int time);
 }
