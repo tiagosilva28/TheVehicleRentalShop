@@ -26,8 +26,8 @@ public class Main {
         //System.out.println(cars[0].getGasConsumption());
 
 
-        c1.requestCar(s1, VehiclesAvailable.BMW);
-        c2.requestCar(s1, VehiclesAvailable.BMW);
+        c1.requestCar(s1, CarsAvailable.BMW);
+        c2.requestBike(s1, BikesAvailable.DUCATI);
 
 
         // Vehicle vehicleList = new Vehicle();

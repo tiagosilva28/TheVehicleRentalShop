@@ -10,11 +10,12 @@ public class Customer {
         return name;
     }
 
-    public void requestCar(Shop shop, VehiclesAvailable cars){
+    public void requestCar(Shop shop, CarsAvailable cars){
         shop.giveCar(cars);
 
     }
-    public void requestMoto(){
+    public void requestBike(Shop shop, BikesAvailable bike){
+        shop.giveBike(bike);
     }
 
     public void returnVehicle() {

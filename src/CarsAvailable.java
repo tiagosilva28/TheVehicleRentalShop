@@ -1,24 +1,19 @@
-public enum VehiclesAvailable {
-    BMW("Honda CBR", 1, "Motorcycle"),
-    MINI("Honda CBR", 1, "Motorcycle"),
-    OPEL("Honda CBR", 1, "Motorcycle"),
-    HONDACBR("Honda CBR", 1, "Motorcycle"),
+public enum CarsAvailable {
+    BMW("Honda CBR", 1),
+    MINI("Honda CBR", 1),
+    OPEL("Honda CBR", 1);
 
-    YAMAHA("Honda CBR", 1, "Motorcycle"),
-    DUCATTI("Honda CBR", 1, "Motorcycle");
 
     private String modelName;
     private double gasConsumption;
-    private String carOrBike;
     public int limitSpeed;
     private int tank;
     private boolean isFree;
 
 
-    VehiclesAvailable(String modelName, double gasConsumption, String carOrBike) {
+    CarsAvailable(String modelName, double gasConsumption) {
         this.modelName = modelName;
         this.gasConsumption = gasConsumption;
-        this.carOrBike = carOrBike;
         this.tank = 25;
         this.isFree = true;
     }
