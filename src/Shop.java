@@ -26,4 +26,12 @@ public class Shop {
         } else System.out.println("The bike is not available!");
         return null;
     }
+
+    public void returnCar(Car myCar){
+
+    };
+
+    public void returnBike(Motocycle myBike) {
+
+    }
 }

@@ -1,5 +1,5 @@
 public enum CarsAvailable {
-    BMW("BMW 320d", 1),
+    BMW("BMW 320d", 0.1),
     MINI("Mini Clubman", 1),
     OPEL("Opel Corsa", 1);
 

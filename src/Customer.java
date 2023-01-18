@@ -14,17 +14,32 @@ public class Customer {
 
 
     public void requestCar(Shop shop, CarsAvailable cars){
+        if(myCar != null){
+            System.out.println("You already have a car!");
+        }
         myCar = shop.giveCar(cars);
 
     }
     public void requestBike(Shop shop, BikesAvailable bike){
+        if(myBike != null){
+            System.out.println("You already have a car!");
+        }
         myBike = shop.giveBike(bike);
     }
 
-    public void returnVehicle() {
+    public void returnVehicle(Shop shop, Vehicle vehicle) {
+        if (vehicle==null){
+            System.out.println("You dont have a Vehicle");
+            return;
+        }
+
+        if(vehicle instanceof Car){
+            shop.returnCar(myCar);
+        }
+        shop.returnBike(myBike);
     }
     public void refuelCar(int value){
-myCar.setTank(myCar.getTank() + value);
+        myCar.setTank(myCar.getTank() + value);
         System.out.println("You now have " + myCar.getTank() + "L in the tank ");
     }
 
