@@ -9,11 +9,13 @@ public class Shop {
         return ShopName;
     }
 
-    public void giveCar(CarsAvailable cars) {
+    public Car giveCar(CarsAvailable cars) {
         if (cars.isFree()){
             System.out.println("The car " + cars.getModelName() + " is ready for you");
             cars.setFree(false);
+            return new Car(cars.getModelName(), cars.getGasConsumption());
         } else System.out.println("The car you want is not available!");
+        return null;
     }
 
     public void giveBike(BikesAvailable bike) {

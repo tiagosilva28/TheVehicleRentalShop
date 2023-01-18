@@ -9,12 +9,12 @@ public class Main {
         Customer c2 = new Customer("Augusto");
         Customer c3 = new Customer("Rafa");
 
-        Vehicle [] cars = {new Car ("car1",8,"Car"), new Car("car2",5,"Car")};
+        Vehicle [] cars = {new Car ("car1",8), new Car("car2",5)};
 
         Vehicle hondaCbr = new Motocycle("Honda CBR", 0.05, "Motorcycle");
         Vehicle kawazaki = new Motocycle("Kawazaki", 0.05, "Motorcycle");
-        Vehicle toyotaCelica = new Car("Toyota Celica", 0.08, "Car");
-        Vehicle opelCorsa = new Car("Opel Corsa", 0.07, "Car");
+        Vehicle toyotaCelica = new Car("Toyota Celica", 0.08);
+        Vehicle opelCorsa = new Car("Opel Corsa", 0.07);
 
         hondaCbr.trip(70,60);
         kawazaki.trip(90, 50);
@@ -28,6 +28,8 @@ public class Main {
 
         c1.requestCar(s1, CarsAvailable.BMW);
         c2.requestBike(s1, BikesAvailable.DUCATI);
+
+
 
 
         // Vehicle vehicleList = new Vehicle();
