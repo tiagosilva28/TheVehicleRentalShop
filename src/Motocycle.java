@@ -2,7 +2,7 @@
 
 public class Motocycle extends Vehicle{
     public Motocycle(String modelName, double gasConsumption, String carOrBike) {
-        super(modelName, gasConsumption, carOrBike);
+        super(modelName, gasConsumption);
         this.limitSpeed = 100;
 
     }

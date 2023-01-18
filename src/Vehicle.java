@@ -8,10 +8,10 @@ public abstract class Vehicle {
     private int tank;
     private boolean isFree;
 
-    public Vehicle(String modelName, double gasConsumption, String carOrBike) {
+    public Vehicle(String modelName, double gasConsumption) {
         this.modelName = modelName;
         this.gasConsumption = gasConsumption;
-        this.carOrBike = carOrBike;
+        //this.carOrBike = carOrBike;
         this.tank = 25;
         //Object[] tempVehicleList = {carOrBike, modelName, gasConsumption};
         //System.out.println(Arrays.toString(tempVehicleList));

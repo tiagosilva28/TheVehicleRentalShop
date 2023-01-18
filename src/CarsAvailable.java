@@ -29,4 +29,8 @@ public enum CarsAvailable {
     public String getModelName() {
         return modelName;
     }
+
+    public double getGasConsumption() {
+        return gasConsumption;
+    }
 }
