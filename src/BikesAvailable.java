@@ -31,4 +31,8 @@ public enum BikesAvailable {
     public String getModelName() {
         return modelName;
     }
+
+    public double getGasConsumption() {
+        return gasConsumption;
+    }
 }

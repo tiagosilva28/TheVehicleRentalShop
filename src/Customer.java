@@ -1,8 +1,8 @@
 public class Customer {
 
     private String name;
-    public Vehicle[] myCars = new Car [5];
-    private Vehicle[] bikes = new Motocycle [5];
+    public Car myCar;
+    public Motocycle myBike;
 
     public Customer(String name) {
         this.name = name;
@@ -14,11 +14,11 @@ public class Customer {
 
 
     public void requestCar(Shop shop, CarsAvailable cars){
-        myCars[0] = shop.giveCar(cars);
+        myCar = shop.giveCar(cars);
 
     }
     public void requestBike(Shop shop, BikesAvailable bike){
-        shop.giveBike(bike);
+        myBike = shop.giveBike(bike);
     }
 
     public void returnVehicle() {

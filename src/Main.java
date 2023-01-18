@@ -11,8 +11,8 @@ public class Main {
 
         Vehicle [] cars = {new Car ("car1",8), new Car("car2",5)};
 
-        Vehicle hondaCbr = new Motocycle("Honda CBR", 0.05, "Motorcycle");
-        Vehicle kawazaki = new Motocycle("Kawazaki", 0.05, "Motorcycle");
+        Vehicle hondaCbr = new Motocycle("Honda CBR", 0.05);
+        Vehicle kawazaki = new Motocycle("Kawazaki", 0.05);
         Vehicle toyotaCelica = new Car("Toyota Celica", 0.08);
         Vehicle opelCorsa = new Car("Opel Corsa", 0.07);
 
@@ -30,9 +30,8 @@ public class Main {
 
         c1.requestCar(s1, CarsAvailable.BMW);
         c2.requestBike(s1, BikesAvailable.DUCATI);
-        c1.myCars[0].g
 
-
+        System.out.println(c1.myCar.getModelName());
 
 
         // Vehicle vehicleList = new Vehicle();

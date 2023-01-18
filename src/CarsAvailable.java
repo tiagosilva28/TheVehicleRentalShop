@@ -1,7 +1,7 @@
 public enum CarsAvailable {
-    BMW("Honda CBR", 1),
-    MINI("Honda CBR", 1),
-    OPEL("Honda CBR", 1);
+    BMW("BMW 320d", 1),
+    MINI("Mini Clubman", 1),
+    OPEL("Opel Corsa", 1);
 
 
     private String modelName;

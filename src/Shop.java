@@ -18,10 +18,12 @@ public class Shop {
         return null;
     }
 
-    public void giveBike(BikesAvailable bike) {
+    public Motocycle giveBike(BikesAvailable bike) {
         if (bike.isFree()){
             System.out.println("The bike " + bike.getModelName() + " is ready for you");
             bike.setFree(false);
+            return new Motocycle(bike.getModelName(), bike.getGasConsumption());
         } else System.out.println("The bike is not available!");
+        return null;
     }
 }
