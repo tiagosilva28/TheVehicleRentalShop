@@ -23,6 +23,9 @@ public class Customer {
 
     public void returnVehicle() {
     }
-    public void refuelVehicle(){
+    public void refuelCar(int value){
+myCar.setTank(myCar.getTank() + value);
+        System.out.println("You now have " + myCar.getTank() + "L in the tank ");
     }
+
 }
