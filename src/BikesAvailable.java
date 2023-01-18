@@ -1,9 +1,9 @@
 public enum BikesAvailable {
 
-    HONDACBR("Honda CBR", 1, "Motorcycle"),
+    HONDA("Honda CBR", 1, "Motorcycle"),
 
-    YAMAHA("Honda CBR", 1, "Motorcycle"),
-    DUCATTI("Honda CBR", 1, "Motorcycle");
+    YAMAHA("Yamaha mt 07", 1, "Motorcycle"),
+    DUCATI("Ducati diavel 1260", 1, "Motorcycle");
 
     private String modelName;
     private double gasConsumption;

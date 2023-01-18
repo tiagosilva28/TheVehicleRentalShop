@@ -18,7 +18,7 @@ public class Shop {
 
     public void giveBike(BikesAvailable bikes) {
         if (bikes.isFree()){
-            System.out.println("The bike" + bikes.getModelName() + "is ready for you");
+            System.out.println("The bike " + bikes.getModelName() + " is ready for you");
             bikes.setFree(false);
         } else System.out.println("The bike you want is nor available!");
     }
