@@ -28,6 +28,7 @@ public class Shop {
     }
 
     public void returnCar(Car myCar){
+        CarsAvailable.BMW.setFree(true);
 
     };
 

@@ -12,7 +12,6 @@ public class Customer {
         return name;
     }
 
-
     public void requestCar(Shop shop, CarsAvailable cars){
         if(myCar != null){
             System.out.println("You already have a car!");
