@@ -31,5 +31,8 @@ public abstract class Vehicle {
     public String getModelName() {
         return modelName;
     }
+    public int getLimitSpeed() {
+        return limitSpeed;
+    }
     public abstract void trip (int distance, int time);
 }
