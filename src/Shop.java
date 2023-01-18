@@ -8,4 +8,11 @@ public class Shop {
     public String getShopName() {
         return ShopName;
     }
+
+    public void giveCar(VehiclesAvailable cars) {
+        if (cars.isFree()){
+            System.out.println("The car " + cars.getModelName() + " is ready for you");
+            cars.setFree(false);
+        } else System.out.println("The car you want is not available!");
+    }
 }

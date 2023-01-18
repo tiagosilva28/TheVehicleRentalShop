@@ -22,4 +22,16 @@ public enum VehiclesAvailable {
         this.tank = 25;
         this.isFree = true;
     }
+
+    public boolean isFree() {
+        return isFree;
+    }
+
+    public void setFree(boolean free) {
+        isFree = free;
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
 }

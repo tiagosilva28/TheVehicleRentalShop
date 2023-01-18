@@ -21,6 +21,9 @@ public class Main {
         System.out.println(cars[0].getGasConsumption());
 
 
+        c1.requestCar(s1, VehiclesAvailable.BMW);
+
+
         // Vehicle vehicleList = new Vehicle();
        // System.out.println(Arrays.toString(tempVehicleList));
 
