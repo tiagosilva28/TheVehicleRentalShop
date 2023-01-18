@@ -21,6 +21,10 @@ public abstract class Vehicle {
         return tank;
     }
 
+    public void setTank(int tank) {
+        this.tank = tank;
+    }
+
     public double getGasConsumption() {
         return gasConsumption;
     }

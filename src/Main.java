@@ -18,7 +18,9 @@ public class Main {
         hondaCbr.trip(70,60);
         kawazaki.trip(90, 50);
         toyotaCelica.trip(310, 100);
-        System.out.println(cars[0].getGasConsumption());
+
+
+        //System.out.println(cars[0].getGasConsumption());
 
 
         c1.requestCar(s1, VehiclesAvailable.BMW);
