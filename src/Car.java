@@ -1,7 +1,7 @@
 public class Car extends Vehicle
 {
-    public Car(String modelName, double gasConsumption) {
-        super(modelName, gasConsumption);
+    public Car(String modelName, double gasConsumption, String carOrBike) {
+        super(modelName, gasConsumption, carOrBike);
         this.limitSpeed = 120;
     }
 
