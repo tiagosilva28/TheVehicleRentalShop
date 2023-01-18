@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -23,7 +21,8 @@ public class Main {
         //System.out.println(cars[0].getGasConsumption());
 
 
-        c1.requestCar(s1, VehiclesAvailable.BMW);
+        c1.requestCar(s1, CarsAvailable.BMW);
+        c2.requestCar(s1, CarsAvailable.BMW);
 
 
         // Vehicle vehicleList = new Vehicle();

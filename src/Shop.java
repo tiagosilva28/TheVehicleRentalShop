@@ -9,7 +9,7 @@ public class Shop {
         return ShopName;
     }
 
-    public void giveCar(VehiclesAvailable cars) {
+    public void giveCar(CarsAvailable cars) {
         if (cars.isFree()){
             System.out.println("The car " + cars.getModelName() + " is ready for you");
             cars.setFree(false);

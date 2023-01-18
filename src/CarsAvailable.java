@@ -1,11 +1,8 @@
-public enum VehiclesAvailable {
+public enum CarsAvailable {
     BMW("Honda CBR", 1, "Motorcycle"),
     MINI("Honda CBR", 1, "Motorcycle"),
-    OPEL("Honda CBR", 1, "Motorcycle"),
-    HONDACBR("Honda CBR", 1, "Motorcycle"),
+    OPEL("Honda CBR", 1, "Motorcycle");
 
-    YAMAHA("Honda CBR", 1, "Motorcycle"),
-    DUCATTI("Honda CBR", 1, "Motorcycle");
 
     private String modelName;
     private double gasConsumption;
@@ -15,7 +12,7 @@ public enum VehiclesAvailable {
     private boolean isFree;
 
 
-    VehiclesAvailable(String modelName, double gasConsumption, String carOrBike) {
+    CarsAvailable(String modelName, double gasConsumption, String carOrBike) {
         this.modelName = modelName;
         this.gasConsumption = gasConsumption;
         this.carOrBike = carOrBike;
