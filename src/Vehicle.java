@@ -13,8 +13,8 @@ public abstract class Vehicle {
         this.gasConsumption = gasConsumption;
         this.carOrBike = carOrBike;
         this.tank = 25;
-        Object[] tempVehicleList = {carOrBike, modelName, gasConsumption};
-        System.out.println(Arrays.toString(tempVehicleList));
+        //Object[] tempVehicleList = {carOrBike, modelName, gasConsumption};
+        //System.out.println(Arrays.toString(tempVehicleList));
     }
 
     public int getTank() {
