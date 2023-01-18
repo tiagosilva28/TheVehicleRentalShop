@@ -18,8 +18,10 @@ public class Main {
 
         hondaCbr.trip(70,60);
         kawazaki.trip(90, 50);
+        kawazaki.trip(80, 5);
         toyotaCelica.trip(310, 100);
-        opelCorsa.trip(240, 100);
+        toyotaCelica.trip(310, 400);
+        opelCorsa.trip(240, 500);
         opelCorsa.trip(150, 100);
 
 
