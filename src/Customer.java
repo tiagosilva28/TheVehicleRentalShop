@@ -10,7 +10,9 @@ public class Customer {
         return name;
     }
 
-    public void requestVehicle(){
+    public void requestCar(){
+    }
+    public void requestMotocycle(){
     }
 
     public void returnVehicle() {
