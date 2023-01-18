@@ -8,10 +8,10 @@ public class Motocycle extends Vehicle{
     }
 
     @Override
-    public void trip(int distance, int time) {
+    public void trip(int distance, int time, double tripGasConsumption) {
         if (distance>80){
             System.out.println("Your Trip is too long");
-            return;
+            return ;
         }
         System.out.println(this.getTank());
 

@@ -9,11 +9,13 @@ public class Main {
         Customer c2 = new Customer("Augusto");
         Customer c3 = new Customer("Rafa");
 
-        Vehicle hondaCbr = new Motocycle("Honda CBR", 0.005, "Motorcycle");
-        Vehicle kawazaki = new Motocycle("Zundap", 0.005, "Motorcycle");
-        Vehicle toyotaCelica = new Car("Toyota Celica", 1, "Car");
+        Vehicle hondaCbr = new Motocycle("Honda CBR", 1, "Motorcycle");
+        Vehicle kawazaki = new Motocycle("Kawazaki", 1, "Motorcycle");
+        Vehicle toyotaCelica = new Car("Toyota Celica", 12.5, "Car");
 
-        hondaCbr.trip(70,60);
+        hondaCbr.trip(70,60,1);
+        kawazaki.trip(90, 50, 1);
+        toyotaCelica.trip(310, 100, 12.5);
 
 
        // Vehicle vehicleList = new Vehicle();
