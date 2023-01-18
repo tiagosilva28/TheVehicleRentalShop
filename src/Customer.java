@@ -14,7 +14,8 @@ public class Customer {
         shop.giveCar(cars);
 
     }
-    public void requestMoto(Shop shop, CarsAvailable cars){
+    public void requestBike(Shop shop, BikesAvailable bike){
+        shop.giveBike(bike);
     }
 
     public void returnVehicle() {

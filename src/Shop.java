@@ -15,4 +15,11 @@ public class Shop {
             cars.setFree(false);
         } else System.out.println("The car you want is not available!");
     }
+
+    public void giveBike(BikesAvailable bike) {
+        if (bike.isFree()){
+            System.out.println("The bike " + bike.getModelName() + " is ready for you");
+            bike.setFree(false);
+        } else System.out.println("The bike is not available!");
+    }
 }
