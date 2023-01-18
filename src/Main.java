@@ -1,11 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Vehicle miniF54 = new Motocycle("Mini Clubman", 0.005);
 
-        miniF54.trip(100,60);
+        Shop s1 = new Shop("Europcar");
 
-//TESTE123
-        //teste 2222
+        Customer c1 = new Customer("Tiago");
+        Customer c2 = new Customer("Augusto");
+        Customer c3 = new Customer("Rafa");
+
+        Vehicle hondaCbr = new Motocycle("Honda CBR", 0.005);
+
+        hondaCbr.trip(70,60);
+
+
 
     }
 }
