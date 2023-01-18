@@ -12,7 +12,7 @@ public class Customer {
 
     public void requestCar(){
     }
-    public void requestMotocycle(){
+    public void requestMoto(){
     }
 
     public void returnVehicle() {
