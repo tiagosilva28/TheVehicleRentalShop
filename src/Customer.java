@@ -9,4 +9,12 @@ public class Customer {
     public String getName() {
         return name;
     }
+
+    public void requestVehicle(){
+    }
+
+    public void returnVehicle() {
+    }
+    public void refuelVehicle(){
+    }
 }
