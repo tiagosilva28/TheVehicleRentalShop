@@ -33,7 +33,7 @@ public class Customer {
         }
 
         if(vehicle instanceof Car){
-            shop.returnCar();
+            shop.returnCar(myCar);
         }
         shop.returnBike(myBike);
     }

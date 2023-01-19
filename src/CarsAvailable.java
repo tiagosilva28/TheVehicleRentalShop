@@ -35,4 +35,8 @@ public enum CarsAvailable {
     public double getGasConsumption() {
         return gasConsumption;
     }
+
+    public String getPlate() {
+        return plate;
+    }
 }

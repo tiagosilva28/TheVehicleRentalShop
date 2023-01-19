@@ -36,5 +36,10 @@ public abstract class Vehicle {
     public int getLimitSpeed() {
         return limitSpeed;
     }
+
+    public String getPlate() {
+        return plate;
+    }
+
     public abstract void trip (int distance, int time);
 }
