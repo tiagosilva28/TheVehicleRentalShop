@@ -9,12 +9,11 @@ public class Main {
         Customer c2 = new Customer("Augusto");
         Customer c3 = new Customer("Rafa");
 
-        Vehicle [] cars = {new Car ("car1",8), new Car("car2",5)};
 
-        Vehicle hondaCbr = new Motocycle("Honda CBR", 0.05);
-        Vehicle kawazaki = new Motocycle("Kawazaki", 0.05);
-        Vehicle toyotaCelica = new Car("Toyota Celica", 0.08);
-        Vehicle opelCorsa = new Car("Opel Corsa", 0.07);
+        Vehicle hondaCbr = new Motocycle("Honda CBR", 0.05,"00-CC-01");
+        Vehicle kawazaki = new Motocycle("Kawazaki", 0.05,"00-CC-02");
+        Vehicle toyotaCelica = new Car("Toyota Celica", 0.08,"00-CC-03");
+        Vehicle opelCorsa = new Car("Opel Corsa", 0.07,"00-CC-04");
 
         hondaCbr.trip(70,60);
         kawazaki.trip(90, 50);

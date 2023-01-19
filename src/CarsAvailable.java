@@ -1,19 +1,21 @@
 public enum CarsAvailable {
-    BMW("BMW 320d", 0.1),
-    MINI("Mini Clubman", 1),
-    OPEL("Opel Corsa", 1);
+    BMW("BMW 320d", 0.1,"00-AA-01"),
+    MINI("Mini Clubman", 1, "00-AA-02"),
+    OPEL("Opel Corsa", 1,"00-AA-03") ;
 
 
     private String modelName;
     private double gasConsumption;
+    private String plate;
     public int limitSpeed;
     private int tank;
     private boolean isFree;
 
 
-    CarsAvailable(String modelName, double gasConsumption) {
+    CarsAvailable(String modelName, double gasConsumption, String plate) {
         this.modelName = modelName;
         this.gasConsumption = gasConsumption;
+        this.plate = plate;
         this.tank = 25;
         this.isFree = true;
     }
