@@ -37,7 +37,7 @@ public class Customer {
         }
         shop.returnBike(myBike);
     }
-    public void refuelCar(int value, Vehicle vehicle){
+    public void refuelVehicle(int value, Vehicle vehicle){
         if (vehicle==null){
             System.out.println("You don't have a Vehicle");
             return;}

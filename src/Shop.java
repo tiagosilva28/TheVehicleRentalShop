@@ -33,14 +33,15 @@ public class Shop {
                 if (myCar.getTank() < 20) {
                     double gasDifference = 20 - myCar.getTank();
                     double payDifference = 2.5 * gasDifference;
-                    System.out.println( );
                     CarsAvailable.values()[i].setFree(true);
-                    System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myCar.getModelName() + "has been returned!");
+                    System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myCar.getModelName() + " has been returned!");
                     myCar = null;
+                    return;
                 } else {
                     CarsAvailable.values()[i].setFree(true);
                     System.out.println(myCar.getModelName() + " has been returned!");
                     myCar = null;
+                    return;
                 }
             } else {
                 System.out.println("Silly, you are trying to return a car you did not rent!!!!");
@@ -54,14 +55,15 @@ public class Shop {
                 if (myBike.getTank() < 20) {
                     double gasDifference = 20 - myBike.getTank();
                     double payDifference = 2.5 * gasDifference;
-                    System.out.println( );
                     BikesAvailable.values()[i].setFree(true);
                     System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myBike.getModelName() + "has been returned!");
                     myBike = null;
+                    return;
                 } else {
                     BikesAvailable.values()[i].setFree(true);
                     System.out.println(myBike.getModelName() + " has been returned!");
                     myBike = null;
+                    return;
                 }
             } else {
                 System.out.println("Silly, you are trying to return a bike you did not rent!!!!");
