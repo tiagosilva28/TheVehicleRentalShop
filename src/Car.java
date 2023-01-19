@@ -8,7 +8,7 @@ public class Car extends Vehicle
     @Override
     public void trip(int distance, int time) {
         if (this.getGasConsumption() * distance <= this.getTank()) {
-           if (distance * 60 / time <= 120) {
+           if (distance * 60 / time <= getLimitSpeed()) {
                System.out.println("-------------CAR TRIP SUCCESSFUL-----------");
                System.out.println("Have a good trip with " + this.getModelName());
                this.setTank((int) (this.getTank() - this.getGasConsumption() * distance));

@@ -13,13 +13,13 @@ public class Motocycle extends Vehicle{
             System.out.println("-------------BIKE TRIP FAILED-----------");
             System.out.println(this.getModelName() + " can't travel that far");
         } else if (this.getGasConsumption() * distance <= this.getTank()) {
-            if (distance * 60 / time <= 120) {
+            if (distance * 60 / time <= getLimitSpeed()) {
                 System.out.println("-------------BIKE TRIP SUCCESSFUL-----------");
                 System.out.println("Have a good trip with " + this.getModelName());
                 this.setTank((int) (this.getTank() - this.getGasConsumption() * distance));
                 System.out.println("You have " + this.getTank() + " gas left in the tank");
             } else {
-                System.out.println("-------------CAR TRIP FAILED-----------");
+                System.out.println("-------------BIKE TRIP FAILED-----------");
                 System.out.println("You can't go that fast with " + this.getModelName());
                 }
         } else {
