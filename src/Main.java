@@ -30,6 +30,7 @@ public class Main {
 
 
         c1.requestCar(s1, CarsAvailable.BMW);
+        c1.refuelCar(100, c1.myCar);
         //c2.requestBike(s1, BikesAvailable.DUCATI);
 
         //System.out.println(c1.myCar.getModelName());
