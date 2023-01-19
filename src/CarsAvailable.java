@@ -42,4 +42,13 @@ public enum CarsAvailable {
     public int getTank() {
         return tank;
     }
+
+    @Override
+    public String toString() {
+        return "CarsAvailable{" +
+                "modelName='" + modelName + '\'' +
+                ", gasConsumption=" + gasConsumption +
+                ", plate='" + plate + '\'' +
+                '}';
+    }
 }
