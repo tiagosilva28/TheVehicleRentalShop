@@ -35,12 +35,10 @@ public class Shop {
                     double payDifference = 2.5 * gasDifference;
                     CarsAvailable.values()[i].setFree(true);
                     System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myCar.getModelName() + " has been returned!");
-                    myCar = null;
                     return;
                 } else {
                     CarsAvailable.values()[i].setFree(true);
                     System.out.println(myCar.getModelName() + " has been returned!");
-                    myCar = null;
                     return;
                 }
             } else {
@@ -57,12 +55,10 @@ public class Shop {
                     double payDifference = 2.5 * gasDifference;
                     BikesAvailable.values()[i].setFree(true);
                     System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myBike.getModelName() + "has been returned!");
-                    myBike = null;
                     return;
                 } else {
                     BikesAvailable.values()[i].setFree(true);
                     System.out.println(myBike.getModelName() + " has been returned!");
-                    myBike = null;
                     return;
                 }
             } else {

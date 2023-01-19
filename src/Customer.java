@@ -34,8 +34,11 @@ public class Customer {
 
         if(vehicle instanceof Car){
             shop.returnCar(myCar);
+            myCar = null;
+        } else {
+            shop.returnBike(myBike);
+            myBike = null;
         }
-        shop.returnBike(myBike);
     }
     public void refuelVehicle(int value, Vehicle vehicle){
         if (vehicle==null){
