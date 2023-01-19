@@ -21,7 +21,7 @@ public class Customer {
     }
     public void requestBike(Shop shop, BikesAvailable bike){
         if(myBike != null){
-            System.out.println("You already have a car!");
+            System.out.println("You already have a bike!");
         }
         myBike = shop.giveBike(bike);
     }
@@ -33,13 +33,23 @@ public class Customer {
         }
 
         if(vehicle instanceof Car){
-            shop.returnCar(myCar);
+            shop.returnCar();
         }
         shop.returnBike(myBike);
     }
-    public void refuelCar(int value){
-        myCar.setTank(myCar.getTank() + value);
-        System.out.println("You now have " + myCar.getTank() + "L in the tank ");
+    public void refuelCar(int value, Vehicle vehicle){
+        if (vehicle==null){
+            System.out.println("You dont have a Vehicle");
+            return;}
+
+        if (vehicle instanceof Car) {
+            myCar.setTank(myCar.getTank() + value);
+            System.out.println("You now have " + myCar.getTank() + "L in the tank ");
+        }
+        if (vehicle instanceof Motocycle){
+            myBike.setTank(myBike.getTank() + value);
+            System.out.println("You now have " + myBike.getTank() + "L in the tank ");
+        }
     }
 
 }
