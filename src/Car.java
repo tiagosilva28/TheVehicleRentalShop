@@ -14,13 +14,16 @@ public class Car extends Vehicle
                System.out.println("Have a good trip with " + this.getModelName());
                this.setTank((int) (this.getTank() - this.getGasConsumption() * distance));
                System.out.println("You have " + this.getTank() + " gas left in the tank");
+               System.out.println("-------------------------------------------");
            } else {
                System.out.println("-------------CAR TRIP FAILED-----------");
                System.out.println("You can't go that fast with " + this.getModelName());
+               System.out.println("----------------------------------------");
                 }
         } else {
             System.out.println("-------------CAR TRIP FAILED-----------");
             System.out.println("You don't have enough gas for this trip with " + this.getModelName());
+            System.out.println("----------------------------------------");
             }
     }
 
