@@ -57,4 +57,24 @@ public class Customer {
         }
     }
 
+    public void getCarsAvailable(){
+        for (int i = 0; i < CarsAvailable.values().length; i++){
+            if (CarsAvailable.values()[i].isFree() == true){
+                System.out.println(CarsAvailable.values()[i]);
+            }
+        }
+        System.out.println("No Cars Available");
+
+    }
+
+    public void getBikesAvailable(){
+        for (int i = 0; i < BikesAvailable.values().length; i++){
+            if (BikesAvailable.values()[i].isFree() == true){
+                System.out.println(BikesAvailable.values()[i]);
+            }
+        }
+        System.out.println("No Bikes Available");
+
+    }
+
 }

@@ -7,7 +7,12 @@ public class Main {
         Customer c2 = new Customer("Augusto");
         Customer c3 = new Customer("Rafa");
 
+
+        c1.getCarsAvailable();
+
+
         c1.requestCar(s1, CarsAvailable.BMW);
+
         c1.requestBike(s1, BikesAvailable.HONDA);
         c1.refuelVehicle(25, c1.myBike);
         c1.myBike.trip(50, 60);
