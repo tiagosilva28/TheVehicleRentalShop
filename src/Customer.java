@@ -21,7 +21,7 @@ public class Customer {
     }
     public void requestBike(Shop shop, BikesAvailable bike){
         if(myBike != null){
-            System.out.println("You already have a car!");
+            System.out.println("You already have a bike!");
         }
         myBike = shop.giveBike(bike);
     }
