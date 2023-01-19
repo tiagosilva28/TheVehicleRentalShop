@@ -48,7 +48,7 @@ public class Customer {
         }
         if (vehicle instanceof Motocycle){
             myBike.setTank(myBike.getTank() + value);
-            System.out.println("You now have " + myCar.getTank() + "L in the tank ");
+            System.out.println("You now have " + myBike.getTank() + "L in the tank ");
         }
     }
 
