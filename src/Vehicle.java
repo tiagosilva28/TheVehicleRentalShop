@@ -4,6 +4,7 @@ public abstract class Vehicle {
     private String modelName;
     private double gasConsumption;
     private String plate;
+    public int tankLimit;
     private String carOrBike;
     public int limitSpeed;
     private int tank;
@@ -13,6 +14,7 @@ public abstract class Vehicle {
         this.modelName = modelName;
         this.gasConsumption = gasConsumption;
         this.plate = plate;
+        this.tankLimit = tankLimit;
         //this.carOrBike = carOrBike;
         this.tank = 25;
         //Object[] tempVehicleList = {carOrBike, modelName, gasConsumption};
@@ -39,5 +41,8 @@ public abstract class Vehicle {
     public String getPlate() {
         return plate;
     }
+
+    public int getTankLimit() { return tankLimit; }
+
     public abstract void trip (int distance, int time);
 }

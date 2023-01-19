@@ -41,7 +41,7 @@ public class Customer {
         if (vehicle==null){
             System.out.println("You don't have a Vehicle");
             return;}
-        if (vehicle.getTank() + value > 75) {
+        if (vehicle.getTank() + value > vehicle.getTankLimit()) {
             System.out.println("The amount of fuel is over the tank limit");
             return;}
         if (vehicle instanceof Car) {

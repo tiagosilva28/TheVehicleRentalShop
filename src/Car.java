@@ -3,6 +3,7 @@ public class Car extends Vehicle
     public Car(String modelName, double gasConsumption, String plate) {
         super(modelName, gasConsumption, plate);
         this.limitSpeed = 120;
+        this.tankLimit = 75;
     }
 
     @Override

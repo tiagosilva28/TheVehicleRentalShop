@@ -7,6 +7,7 @@ public enum CarsAvailable {
     private String modelName;
     private double gasConsumption;
     private String plate;
+    private int tankLimit;
     public int limitSpeed;
     private int tank;
     private boolean isFree;

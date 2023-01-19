@@ -30,7 +30,8 @@ public class Main {
 
 
         c1.requestCar(s1, CarsAvailable.BMW);
-        c1.refuelCar(100, c1.myCar);
+        c1.requestBike(s1, BikesAvailable.HONDA);
+        c1.refuelCar(25, c1.myBike);
         //c2.requestBike(s1, BikesAvailable.DUCATI);
 
 
