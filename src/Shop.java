@@ -18,11 +18,11 @@ public class Shop {
         return null;
     }
 
-    public Motocycle giveBike(BikesAvailable bike) {
-        if (bike.isFree()){
-            System.out.println("The bike " + bike.getModelName() + " is ready for you");
-            bike.setFree(false);
-            return new Motocycle(bike.getModelName(), bike.getGasConsumption(), bike.getPlate());
+    public Motocycle giveBike(BikesAvailable bikes) {
+        if (bikes.isFree()){
+            System.out.println("The bike " + bikes.getModelName() + " is ready for you");
+            bikes.setFree(false);
+            return new Motocycle(bikes.getModelName(), bikes.getGasConsumption(), bikes.getPlate());
         } else System.out.println("The bike is not available!");
         return null;
     }
@@ -30,15 +30,42 @@ public class Shop {
     public void returnCar(Car myCar){
         for (int i = 0; i < CarsAvailable.values().length; i++) {
             if (myCar.getPlate() ==  CarsAvailable.values()[i].getPlate()) {
-                System.out.println("Equal Plate");
+                if (myCar.getTank() < 20) {
+                    double gasDifference = 20 - myCar.getTank();
+                    double payDifference = 2.5 * gasDifference;
+                    System.out.println( );
+                    CarsAvailable.values()[i].setFree(true);
+                    System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myCar.getModelName() + "has been returned!");
+                    myCar = null;
+                } else {
+                    CarsAvailable.values()[i].setFree(true);
+                    System.out.println(myCar.getModelName() + " has been returned!");
+                    myCar = null;
+                }
+            } else {
+                System.out.println("Silly, you are trying to return a car you did not rent!!!!");
             }
-
         }
-
-
     };
 
     public void returnBike(Motocycle myBike) {
-
+        for (int i = 0; i < BikesAvailable.values().length; i++) {
+            if (myBike.getPlate() ==  BikesAvailable.values()[i].getPlate()) {
+                if (myBike.getTank() < 20) {
+                    double gasDifference = 20 - myBike.getTank();
+                    double payDifference = 2.5 * gasDifference;
+                    System.out.println( );
+                    BikesAvailable.values()[i].setFree(true);
+                    System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myBike.getModelName() + "has been returned!");
+                    myBike = null;
+                } else {
+                    BikesAvailable.values()[i].setFree(true);
+                    System.out.println(myBike.getModelName() + " has been returned!");
+                    myBike = null;
+                }
+            } else {
+                System.out.println("Silly, you are trying to return a bike you did not rent!!!!");
+            }
+        }
     }
 }

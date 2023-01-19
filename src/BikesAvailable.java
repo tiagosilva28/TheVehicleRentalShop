@@ -38,4 +38,7 @@ public enum BikesAvailable {
         return gasConsumption;
     }
     public String getPlate() {return plate;}
+    public int getTank() {
+        return tank;
+    }
 }

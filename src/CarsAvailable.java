@@ -37,4 +37,8 @@ public enum CarsAvailable {
     }
 
     public String getPlate() {return plate;}
+
+    public int getTank() {
+        return tank;
+    }
 }
