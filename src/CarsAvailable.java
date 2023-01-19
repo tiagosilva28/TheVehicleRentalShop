@@ -36,7 +36,5 @@ public enum CarsAvailable {
         return gasConsumption;
     }
 
-    public String getPlate() {
-        return plate;
-    }
+    public String getPlate() {return plate;}
 }

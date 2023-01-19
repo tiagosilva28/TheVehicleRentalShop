@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Shop {
     private String ShopName;
 
@@ -15,7 +13,7 @@ public class Shop {
         if (cars.isFree()){
             System.out.println("The car " + cars.getModelName() + " is ready for you");
             cars.setFree(false);
-            return new Car(cars.getModelName(), cars.getGasConsumption(), cars.getPlate());
+            return new Car(cars.getModelName(), cars.getGasConsumption());
         } else System.out.println("The car you want is not available!");
         return null;
     }
@@ -24,7 +22,7 @@ public class Shop {
         if (bike.isFree()){
             System.out.println("The bike " + bike.getModelName() + " is ready for you");
             bike.setFree(false);
-            return new Motocycle(bike.getModelName(), bike.getGasConsumption(), bike.getPlate());
+            return new Motocycle(bike.getModelName(), bike.getGasConsumption());
         } else System.out.println("The bike is not available!");
         return null;
     }
