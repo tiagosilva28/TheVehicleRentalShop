@@ -28,7 +28,7 @@ public class Customer {
 
     public void returnVehicle(Shop shop, Vehicle vehicle) {
         if (vehicle==null){
-            System.out.println("You dont have a Vehicle");
+            System.out.println("You don't have a Vehicle");
             return;
         }
 
@@ -39,7 +39,7 @@ public class Customer {
     }
     public void refuelCar(int value, Vehicle vehicle){
         if (vehicle==null){
-            System.out.println("You dont have a Vehicle");
+            System.out.println("You don't have a Vehicle");
             return;}
 
         if (vehicle instanceof Car) {

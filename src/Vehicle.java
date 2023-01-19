@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public abstract class Vehicle {
     private String modelName;
     private double gasConsumption;
@@ -35,6 +33,9 @@ public abstract class Vehicle {
     }
     public int getLimitSpeed() {
         return limitSpeed;
+    }
+    public String getPlate() {
+        return plate;
     }
     public abstract void trip (int distance, int time);
 }
