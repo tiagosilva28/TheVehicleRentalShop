@@ -7,11 +7,9 @@ public class Customer {
     public Customer(String name) {
         this.name = name;
     }
-
     public String getName() {
         return name;
     }
-
     public void requestCar(Shop shop, CarsAvailable cars){
         if(myCar != null){
             System.out.println("You already have a car!");
@@ -27,15 +25,16 @@ public class Customer {
     }
 
     public void returnVehicle(Shop shop, Vehicle vehicle) {
-        if (vehicle==null){
+      // if (this.myCar.getTank() < 20) {}
+        if (vehicle == null) {
             System.out.println("You don't have a Vehicle");
-            return;
-        }
-
-        if(vehicle instanceof Car){
+        } else if (vehicle instanceof Car) {
             shop.returnCar();
+            System.out.println("You have successfully returned the car: ");
+        } else {
+            shop.returnBike(myBike);
+            System.out.println("You have successfully returned your bike");
         }
-        shop.returnBike(myBike);
     }
     public void refuelCar(int value, Vehicle vehicle){
         if (vehicle==null){
