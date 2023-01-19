@@ -34,9 +34,7 @@ public class Main {
 
         //System.out.println(c1.myCar.getModelName());
 
-        //c1.returnVehicle(s1, c1.myCar);
-        c2.returnVehicle(s1, c2.myBike);
-
+        c1.returnVehicle(s1, c1.myCar);
 
 
 

@@ -29,7 +29,7 @@ public class Shop {
 
     public void returnCar(Car myCar){
         for (int i = 0; i < CarsAvailable.values().length; i++) {
-            if (myCar.getPlate() == CarsAvailable.BMW.getPlate() ) {
+            if (myCar.getPlate() ==  CarsAvailable.values()[i].getPlate()) {
                 System.out.println("Equal Plate");
             }
 
