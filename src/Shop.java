@@ -54,7 +54,7 @@ public class Shop {
                     double gasDifference = 20 - myBike.getTank();
                     double payDifference = 2.5 * gasDifference;
                     BikesAvailable.values()[i].setFree(true);
-                    System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myBike.getModelName() + "has been returned!");
+                    System.out.println("The tank is below 20L, you will have to pay " + payDifference+ "€." + myBike.getModelName() + " has been returned!");
                     return;
                 } else {
                     BikesAvailable.values()[i].setFree(true);
