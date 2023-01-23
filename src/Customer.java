@@ -1,8 +1,8 @@
 public class Customer {
 
     private String name;
-    public Car myCar;
-    public Motocycle myBike;
+    private Car myCar;
+    private Motocycle myBike;
 
     public Customer(String name) {
         this.name = name;
@@ -13,17 +13,17 @@ public class Customer {
     }
 
     public void requestCar(Shop shop, CarsAvailable cars){
-        if(myCar != null){
+        if(getMyCar() != null){
             System.out.println("You already have a car!");
         }
-        myCar = shop.giveCar(cars);
+        setMyCar(shop.giveCar(cars));
 
     }
     public void requestBike(Shop shop, BikesAvailable bike){
-        if(myBike != null){
+        if(getMyBike() != null){
             System.out.println("You already have a bike!");
         }
-        myBike = shop.giveBike(bike);
+        setMyBike(shop.giveBike(bike));
     }
 
     public void returnVehicle(Shop shop, Vehicle vehicle) {
@@ -33,11 +33,11 @@ public class Customer {
         }
 
         if(vehicle instanceof Car){
-            shop.returnCar(myCar);
-            myCar = null;
+            shop.returnCar(getMyCar());
+            setMyCar(null);
         } else {
-            shop.returnBike(myBike);
-            myBike = null;
+            shop.returnBike(getMyBike());
+            setMyBike(null);
         }
     }
     public void refuelVehicle(int value, Vehicle vehicle){
@@ -48,12 +48,12 @@ public class Customer {
             System.out.println("The amount of fuel is over the tank limit");
             return;}
         if (vehicle instanceof Car) {
-            myCar.setTank(myCar.getTank() + value);
-            System.out.println("You now have " + myCar.getTank() + "L in the tank ");
+            getMyCar().setTank(getMyCar().getTank() + value);
+            System.out.println("You now have " + getMyCar().getTank() + "L in the tank ");
         }
         if (vehicle instanceof Motocycle){
-            myBike.setTank(myBike.getTank() + value);
-            System.out.println("You now have " + myBike.getTank() + "L in the tank ");
+            getMyBike().setTank(getMyBike().getTank() + value);
+            System.out.println("You now have " + getMyBike().getTank() + "L in the tank ");
         }
     }
 
@@ -77,4 +77,19 @@ public class Customer {
 
     }
 
+    public Car getMyCar() {
+        return myCar;
+    }
+
+    public void setMyCar(Car myCar) {
+        this.myCar = myCar;
+    }
+
+    public Motocycle getMyBike() {
+        return myBike;
+    }
+
+    public void setMyBike(Motocycle myBike) {
+        this.myBike = myBike;
+    }
 }

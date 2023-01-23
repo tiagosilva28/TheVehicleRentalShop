@@ -28,6 +28,12 @@ public class Shop {
     }
 
     public void returnCar(Car myCar){
+        /*for (CarsAvailable carsAvailable : CarsAvailable.values()) {
+            if (myCar.getPlate()==carsAvailable.getPlate())
+        }*/
+
+
+
         for (int i = 0; i < CarsAvailable.values().length; i++) {
             if (myCar.getPlate() ==  CarsAvailable.values()[i].getPlate()) {
                 if (myCar.getTank() < 20) {

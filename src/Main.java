@@ -14,11 +14,11 @@ public class Main {
         c1.requestCar(s1, CarsAvailable.BMW);
 
         c1.requestBike(s1, BikesAvailable.HONDA);
-        c1.refuelVehicle(25, c1.myBike);
-        c1.myBike.trip(50, 60);
-        c1.returnVehicle(s1, c1.myCar);
-        c1.returnVehicle(s1, c1.myBike);
-        c1.returnVehicle(s1, c1.myBike);
+        c1.refuelVehicle(25, c1.getMyBike());
+        c1.getMyBike().trip(50, 60);
+        c1.returnVehicle(s1, c1.getMyCar());
+        c1.returnVehicle(s1, c1.getMyBike());
+        c1.returnVehicle(s1, c1.getMyBike());
 
 
         // Vehicle vehicleList = new Vehicle();
